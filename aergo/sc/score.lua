@@ -51,10 +51,6 @@ function constructor(manifestAddress)
   )]])
 end
 
-local function isEmpty(v)
-  return nil == v or 0 == string.len(v)
-end
-
 function addScore(user_id, score, playtime)
   system.print(MODULE_NAME .. "addScore: user_id=" .. tostring(user_id)
           .. ", score=" .. tostring(score) 

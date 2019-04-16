@@ -124,7 +124,7 @@ public class GameController : MonoBehaviour
         if (aergo == null)
         {
             aergo = new Aergo();
-            aergo.Connect("localhost:7845");
+            aergo.Connect("sqltestnet-api.aergo.io:7845");
             aergo.NewAccount("6hXe7VLPrFLGBAsMBW3QwammXDq5w6AvRQmdPYmrWDVcjbBsSiC");
         }
         else
