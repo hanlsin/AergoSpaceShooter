@@ -144,7 +144,7 @@ public class GameController : MonoBehaviour
         ArrayList args = new ArrayList();
         args.Add("__SPACE_SHOOTER__");
         args.Add("getTopScores");
-        args.Add(20);
+        args.Add(10);
         ScoreList result = aergo.QuerySmartContract<ScoreList>(SC_ADDRESS, "callFunction", args);
         string scoreBoard = "";
         if (result.__status_code / 200 != 1)
